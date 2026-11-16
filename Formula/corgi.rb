@@ -6,17 +6,15 @@
 class Corgi < Formula
   desc "Tmux-style terminal UI for herdr-core"
   homepage "https://github.com/hong-yi/corgi"
-  version "0.1.0"
+  # The Apple Silicon build by default (brew reads the version from its name); Linux overrides it
+  # below. Every OS and CPU must have a URL, even the Intel Mac that depends_on then refuses.
+  url "https://github.com/hong-yi/corgi/releases/download/v0.1.0/corgi-0.1.0-aarch64-apple-darwin.tar.gz"
+  sha256 "1e3cbb8ab4af36433f4dbff19e5072a763dab3e584bd5cf3e9139c36323c6506"
   license "MIT"
 
   on_macos do
     # Apple Silicon only: there's no Intel Mac build.
     depends_on arch: :arm64
-
-    on_arm do
-      url "https://github.com/hong-yi/corgi/releases/download/v0.1.0/corgi-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1e3cbb8ab4af36433f4dbff19e5072a763dab3e584bd5cf3e9139c36323c6506"
-    end
   end
 
   on_linux do
