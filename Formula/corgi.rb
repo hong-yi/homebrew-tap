@@ -8,8 +8,8 @@ class Corgi < Formula
   homepage "https://github.com/hong-yi/corgi"
   # The Apple Silicon build by default (brew reads the version from its name); Linux overrides it
   # below. Every OS and CPU must have a URL, even the Intel Mac that depends_on then refuses.
-  url "https://github.com/hong-yi/corgi/releases/download/v0.1.0/corgi-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "1e3cbb8ab4af36433f4dbff19e5072a763dab3e584bd5cf3e9139c36323c6506"
+  url "https://github.com/hong-yi/corgi/releases/download/v0.1.1/corgi-0.1.1-aarch64-apple-darwin.tar.gz"
+  sha256 "bc35fadfa69b1ffecc6199472800f74347c8589b4dd8eb41e5cf098925ffbc61"
   license "MIT"
 
   on_macos do
@@ -19,12 +19,12 @@ class Corgi < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/hong-yi/corgi/releases/download/v0.1.0/corgi-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8b2c01d60980599788673902eeb21cd1fbeaac20f1b116598c68466851a81fa4"
+      url "https://github.com/hong-yi/corgi/releases/download/v0.1.1/corgi-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "654f9b6549b512135f36a74fba334c0856e33cb9b2ecf2434be80ae2bf5a838e"
     end
     on_arm do
-      url "https://github.com/hong-yi/corgi/releases/download/v0.1.0/corgi-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2311664297e671d96e001fe4068cc3a63a2e82de8222b94012f76139f3fb0a8d"
+      url "https://github.com/hong-yi/corgi/releases/download/v0.1.1/corgi-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c55ade4485783abe8091e057544ea76a8b2ca3f7d31fc620b6a7fbc228837c4e"
     end
   end
 
